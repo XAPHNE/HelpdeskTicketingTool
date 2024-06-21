@@ -62,6 +62,10 @@ if (osTicket::is_ie())
     <script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/redactor-plugins.js"></script>
     <script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/redactor-osticket.js"></script>
     <script type="text/javascript" src="<?php echo ROOT_PATH; ?>js/select2.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="<?php echo ROOT_PATH; ?>scp/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="<?php echo ROOT_PATH; ?>scp/bootstrap/js/bootstrap.bundle.min.js"></script>
     <?php
     if($ost && ($headers=$ost->getExtraHeaders())) {
         echo "\n\t".implode("\n\t", $headers)."\n";
