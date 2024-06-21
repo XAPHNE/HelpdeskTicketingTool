@@ -61,7 +61,8 @@ if (osTicket::is_ie())
     ?>
 </head>
 <body>
-<div id="container">
+<!-- <div id="container"> -->
+<div class="container-fluid">
     <?php
     if($ost->getError())
         echo sprintf('<div id="error_bar">%s</div>', $ost->getError());
