@@ -92,7 +92,8 @@ if (osTicket::is_ie())
     ?>
 </head>
 <body>
-    <div id="container">
+    <!-- <div id="container"> -->
+    <div class="container-fluid">
         <?php
         if($ost->getError())
             echo sprintf('<div class="error_bar">%s</div>', $ost->getError());
@@ -167,7 +168,8 @@ if (($all_langs = Internationalization::getConfiguredSystemLanguages())
          <hr>
         <?php
         } ?>
-        <div id="content">
+        <!-- <div id="content"> -->
+        <div class="container">
 
          <?php if($errors['err']) { ?>
             <div id="msg_error"><?php echo $errors['err']; ?></div>
